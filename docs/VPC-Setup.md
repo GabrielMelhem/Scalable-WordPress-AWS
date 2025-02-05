@@ -1,4 +1,7 @@
 # Setting Up VPC for Scalable WordPress Resume on AWS 🌐
+VPC provides the networking foundation for the application.
+
+By using VPCAdminUser:
 
 ## Step 1: Create the VPC 🏗️
 - **Name tag:** `WordPressVPC`
