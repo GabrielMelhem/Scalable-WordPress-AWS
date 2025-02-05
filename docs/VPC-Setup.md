@@ -76,4 +76,4 @@ By using VPCAdminUser:
 🚀 **If everything works, the VPC setup is complete!** 🎉  
 
 ## step 7: Automated setup 
-For an automated setup using CloudFormation, refer to [VPC-CF](infrastructure/cloudformation/VPC-CF.yml).
+For an automated setup using CloudFormation, refer to [VPC-CF](./infrastructure/cloudformation/VPC-CF.yml).
