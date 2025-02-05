@@ -78,13 +78,13 @@ By using VPCAdminUser:
 ## step 7: Automated setup 
 For an automated setup of the VPC, subnets, security groups, routing configurations, and other related resources, you can use the provided CloudFormation template.
 
-Refer to the [`vpc-CF.yaml`](../infrastructure/cloudformation/vpc-CF.yml) file for the full CloudFormation script that will automatically create and configure these resources.
+Refer to the [`VPC-CF.yml`](../infrastructure/cloudformation/VPC-CF.yml) file for the full CloudFormation script that will automatically create and configure these resources.
 
 ### Instructions to Deploy CloudFormation Stack:
 1. Go to the AWS Management Console.
 2. Navigate to **CloudFormation**.
 3. Click on **Create Stack** → **With New Resources (Standard)**.
-4. Upload the `vpc-CF.yaml` file.
+4. Upload the `VPC-CF.yml` file.
 5. Follow the prompts to review the stack configuration and click **Create Stack**.
 6. Once the stack creation is complete, the VPC and all associated resources will be automatically set up.
 
