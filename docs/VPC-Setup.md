@@ -3,6 +3,7 @@ VPC provides the networking foundation for the application.
 
 By using VPCAdminUser:
 
+
 ## Step 1: Create the VPC 🏗️
 - **Name tag:** `WordPressVPC`
 - **IPv4 CIDR block:** `10.0.0.0/16`
@@ -73,3 +74,6 @@ By using VPCAdminUser:
 ✅ **Verify internet connectivity** by pinging an external site.  
 ✅ **Ensure SSH access** from your local machine (if port 22 is open).  
 🚀 **If everything works, the VPC setup is complete!** 🎉  
+
+## step 7: Automated setup 
+For an automated setup using CloudFormation, refer to [VPC-CF](infrastructure/cloudformation/VPC-CF.yml).
