@@ -35,7 +35,7 @@
 
 ## Step 4: Update Route Tables 🚦  
 ### Public Route Table 🌍  
-1. **Name tag:**Public route table**  Attach to `WordPressVPC`.  
+1. **Name tag:** `Public route table`  Attach to `WordPressVPC`.  
 2. **Edit Routes** ➝ Add a route:  
    - **Destination:** `0.0.0.0/0`  
    - **Target:** Internet Gateway (`WordPressIGW`)  
