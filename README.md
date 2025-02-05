@@ -1,7 +1,7 @@
 # Scalable, Highly Available, and Fault-Tolerant WordPress Application on AWS
 This project is part of my AWS Cloud Computing Bootcamp at Neue Fische. The goal is to demonstrate key concepts of cloud architecture, automation, and scalability within Amazon Web Services (AWS).
 
-## Project Overview  
+## 📌 Project Overview  
 A **WordPress application** is a web-based content management system (CMS) that allows users to create, manage, and publish content easily.  
 
 This project demonstrates how to implement a **Scalable, Highly Available, and Fault-Tolerant WordPress Application** on AWS to ensure:  
@@ -44,16 +44,19 @@ The architecture is designed using various AWS services, as illustrated in the d
 
 ---  
 
-## 📌 **Getting Started**  
-This project follows a structured implementation approach to build a Scalable, Highly Available, and Fault-Tolerant WordPress Application on AWS.
+## 📖 Getting Started
 
-🛠 Implementation Steps:
-1️⃣ IAM Setup – Configure Identity and Access Management (IAM) users, roles, and permissions.
-2️⃣ VPC Setup – Create a Virtual Private Cloud (VPC) with subnets, security groups, and routing configurations.
-3️⃣ Compute & Auto Scaling – Deploy EC2 instances and set up Auto Scaling for handling traffic spikes. (Coming Soon 🚀)
-4️⃣ Database Configuration – Configure RDS for a reliable and multi-AZ database setup. (Coming Soon 📌)
-5️⃣ Security & Performance – Implement security best practices and caching for performance optimization. (Coming Soon 🔒)
+This project follows a structured implementation approach to build a **Scalable, Highly Available, and Fault-Tolerant WordPress Application** on AWS.
 
-🔹 Steps to deploy this project will be added here soon.
+### 🛠 Implementation Steps:
+1️⃣ **[IAM Setup](docs/IAM-Setup.md)** – Configure Identity and Access Management (IAM) users, roles, and permissions.  
+2️⃣ **[VPC Setup](docs/VPC-Setup.md)** – Create a Virtual Private Cloud (VPC) with subnets, security groups, and routing configurations.  
+3️⃣ **Compute & Auto Scaling** – Deploy EC2 instances and set up Auto Scaling for handling traffic spikes. *(Coming Soon 🚀)*  
+4️⃣ **Database Configuration** – Configure RDS for a reliable and multi-AZ database setup. *(Coming Soon 📌)*  
+5️⃣ **Security & Performance** – Implement security best practices and caching for performance optimization. *(Coming Soon 🔒)*  
+
+🔹 *Steps to deploy this project will be added here soon.*  
+
+
 
 
