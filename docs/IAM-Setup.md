@@ -10,9 +10,9 @@ Created an AWS Personal Free Tier account to implement a scalable WordPress onli
 
 ## 3. Creating IAM Groups for Role-Based Access 🧑‍💻
 Created the following IAM groups with appropriate policies:
-- **VPC-Admins**: Full access to manage VPC, subnets, and related resources (policy: `AmazonVPCFullAccess`). 🌐
+- **VPC-Admins**: Full access to manage VPC, subnets, and related resources (policies: `AmazonVPCFullAccess`, `AmazonEC2FullAccess`). 🌐
 - **Storage-Admins**: Full access to manage S3 buckets, CloudFront, and other storage services (policies: `AmazonS3FullAccess`, `CloudFrontFullAccess`). 📦
-- **Monitoring-Admins**: Full access to CloudWatch, CloudTrail, and other monitoring services (policies: `CloudWatchFullAccess`, `CloudTrail_FullAccess`). 📊
+- **Monitoring-Admins**: Full access to CloudWatch, CloudTrail, and other monitoring services (policies: `CloudWatchFullAccess`,`CloudWatchFullAccessV2`, `AWSCloudTrail_FullAccess`). 📊
 
 ## 4. Create IAM Users and Assign Them to Groups 🧑‍💻🔑
 Created the following IAM users:
