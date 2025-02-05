@@ -45,4 +45,15 @@ The architecture is designed using various AWS services, as illustrated in the d
 ---  
 
 ## 📌 **Getting Started**  
-(*Steps to deploy this project will be added here soon*)
+This project follows a structured implementation approach to build a Scalable, Highly Available, and Fault-Tolerant WordPress Application on AWS.
+
+🛠 Implementation Steps:
+1️⃣ IAM Setup – Configure Identity and Access Management (IAM) users, roles, and permissions.
+2️⃣ VPC Setup – Create a Virtual Private Cloud (VPC) with subnets, security groups, and routing configurations.
+3️⃣ Compute & Auto Scaling – Deploy EC2 instances and set up Auto Scaling for handling traffic spikes. (Coming Soon 🚀)
+4️⃣ Database Configuration – Configure RDS for a reliable and multi-AZ database setup. (Coming Soon 📌)
+5️⃣ Security & Performance – Implement security best practices and caching for performance optimization. (Coming Soon 🔒)
+
+🔹 Steps to deploy this project will be added here soon.
+
+
