@@ -43,20 +43,20 @@ The architecture is designed using various AWS services, as illustrated in the d
 - **Amazon SNS (Simple Notification Service)** sends admin alerts via email.  
 
 ---  
-
 ## 📖 Getting Started
 
 This project follows a structured implementation approach to build a **Scalable, Highly Available, and Fault-Tolerant WordPress Application** on AWS.
 
 ### 🛠 Implementation Steps:
 1️⃣ **[IAM Setup](docs/IAM-Setup.md)** – Configure Identity and Access Management (IAM) users, roles, and permissions.  
-2️⃣ **[VPC Setup](docs/VPC-Setup.md)** – Create a Virtual Private Cloud (VPC) with subnets, security groups, and routing configurations.
-3️⃣ **[EC2 Setup](docs/EC2-Setup.md)** - launch an EC2 instance for WordPress Hosting.
+2️⃣ **[VPC Setup](docs/VPC-Setup.md)** – Create a Virtual Private Cloud (VPC) with subnets, security groups, and routing configurations.  
+3️⃣ **[EC2 Setup](docs/EC2-Setup.md)** - Launch an EC2 instance for WordPress Hosting.  
+
 3️⃣ **Compute & Auto Scaling** – Deploy EC2 instances and set up Auto Scaling for handling traffic spikes. *(Coming Soon 🚀)*  
 4️⃣ **Database Configuration** – Configure RDS for a reliable and multi-AZ database setup. *(Coming Soon 📌)*  
 5️⃣ **Security & Performance** – Implement security best practices and caching for performance optimization. *(Coming Soon 🔒)*  
 
-🔹 *Steps to deploy this project will be added here soon.*  
+🔹 *Steps to deploy this project will be added here soon.*
 
 
 
