@@ -153,28 +153,13 @@ Restart Apache again to apply changes:
 ```bash
 sudo systemctl restart httpd
 ```
-### 8.19. Create a PHP test file 📝
-Create a phpinfo.php file to verify PHP is working:
-```bash
-echo "<?php phpinfo(); ?>" | sudo tee /var/www/html/info.php
-```
-### 8.20. Test PHP and phpMyAdmin 🌍
-Open your browser and navigate to:
-```pgsql
-http://your-server-ip/info.php
-```
-You should see the PHP information page.
 
-Also, navigate to:
-```
+### 8.20. Test phpMyAdmin 🌍
+Open your browser and navigate to:
+```bash
 http://your-server-ip/phpmyadmin
 ```
 To access phpMyAdmin.
 
-### 8.21. Enable Apache and MariaDB on boot
-Ensure Apache and MariaDB start automatically on reboot:
-```bash
-sudo systemctl enable httpd
-sudo systemctl enable mariadb
-```
+
 ## Step 9: Set Up WORDPRESS on Amazon Linux 🔧
