@@ -6,11 +6,11 @@ This guide outlines the steps to launch an EC2 instance for hosting your WordPre
 
 ## Step 1: Choose an Amazon Machine Image (AMI) 🖼️
 - Log in to the AWS Management Console as VPCAdminUser.
-- Under Name and Tags, enter a name like WordPress WebServer
-- Select **Amazon Linux 2 AMI (HVM), SSD Volume Type** (Free Tier eligible). ✔️
+- Under Name and Tags, enter a name like `WordPress WebServer`
+- Select `Amazon Linux 2 AMI (HVM), SSD Volume Type` (Free Tier eligible). ✔️
 
 ## Step 2: Choose an Instance Type ⚙️
-- Choose **t2.micro** (Free Tier eligible). 🏷️
+- Choose `t2.micro` (Free Tier eligible). 🏷️
 
 ## Step 3: Create or Select Key Pair 🔑
 - Choose **Create a new key pair** or use an existing one.
@@ -18,12 +18,12 @@ This guide outlines the steps to launch an EC2 instance for hosting your WordPre
 - **Download the .pem file** and store it safely. 💾
 
 ## Step 4: Configure Instance Details ⚙️
-- **VPC**: Select **WordPressVPC** (the VPC created earlier).
-- **Subnet**: Choose **Public Subnet 1**.
-- **Auto-assign Public IP**: **Enable**. 🌐
+- **VPC**: Select `WordPressVPC` (the VPC created earlier).
+- **Subnet**: Choose `Public Subnet 1`
+- **Auto-assign Public IP**: `Enable` 🌐
 
 ## Step 5: Configure Security Group 🔒
-- Select **WordPress SG** (created during VPC setup).
+- Select `WordPress SG` (created during VPC setup).
 - Ensure the following **Inbound Rules**:
   - **SSH (22)** → `Your IP only` 🔐
   - **HTTP (80)** → `0.0.0.0/0` 🌍
