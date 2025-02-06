@@ -14,7 +14,7 @@ This guide outlines the steps to launch an EC2 instance for hosting your WordPre
 
 ## Step 3: Create or Select Key Pair 🔑
 - Choose **Create a new key pair** or use an existing one.
-- Name it **your-key**.
+- Name it `your-key`.
 - **Download the .pem file** and store it safely. 💾
 
 ## Step 4: Configure Instance Details ⚙️
@@ -25,9 +25,9 @@ This guide outlines the steps to launch an EC2 instance for hosting your WordPre
 ## Step 5: Configure Security Group 🔒
 - Select **WordPress SG** (created during VPC setup).
 - Ensure the following **Inbound Rules**:
-  - **SSH (22)** → **Your IP only** 🔐
-  - **HTTP (80)** → **0.0.0.0/0** 🌍
-  - **HTTPS (443)** → **0.0.0.0/0** 🔒
+  - **SSH (22)** → `Your IP only` 🔐
+  - **HTTP (80)** → `0.0.0.0/0` 🌍
+  - **HTTPS (443)** → `0.0.0.0/0` 🔒
 
 ## Step 6: Configure Storage 💾
 - **Root volume**: 8GB (default, General Purpose SSD - gp2). 📦
