@@ -99,10 +99,11 @@ Verify MariaDB is running:
 sudo systemctl status mariadb
 ```
 ### 8.11 Create Database and user
-```bash
 log in to MySQL:
+```bash
 mysql -u root -p
 ```
+
 ```pgsql
 CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 CREATE USER 'wordpress'@'localhost' IDENTIFIED BY 'wordpress';
