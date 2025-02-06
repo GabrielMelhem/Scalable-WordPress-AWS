@@ -163,3 +163,4 @@ Ensure Apache and MariaDB start automatically on reboot:
 sudo systemctl enable httpd
 sudo systemctl enable mariadb
 ```
+## Step 9: Set Up WORDPRESS on Amazon Linux 🔧
