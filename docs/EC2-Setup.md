@@ -1,5 +1,9 @@
 # Setting Up an EC2 Instance for WordPress Hosting
 
+This guide outlines the steps to launch an EC2 instance for hosting your WordPress application.
+
+---
+
 ## Step 1: Choose an Amazon Machine Image (AMI)
 - Log in to the AWS Management Console as VPCAdminUser.
 - Under Name and Tags, enter a name like WordPress WebServer
