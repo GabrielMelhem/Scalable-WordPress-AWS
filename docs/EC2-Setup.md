@@ -98,6 +98,19 @@ Verify MariaDB is running:
 ```bash
 sudo systemctl status mariadb
 ```
+### 8.11 Create Database and user
+```bash
+log in to MySQL:
+mysql -u root -p
+```
+```pgsql
+CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+CREATE USER 'wordpress'@'localhost' IDENTIFIED BY 'wordpress';
+GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpress'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+``` 
+
 ### 8.11. Enable PHP 8.1 💻
 Enable PHP 8.1 using Amazon Linux Extras:
 ```bash
