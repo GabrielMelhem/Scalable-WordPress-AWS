@@ -156,3 +156,10 @@ Also, navigate to:
 http://your-server-ip/phpmyadmin
 ```
 To access phpMyAdmin.
+
+### 8.21. Enable Apache and MariaDB on boot
+Ensure Apache and MariaDB start automatically on reboot:
+```bash
+sudo systemctl enable httpd
+sudo systemctl enable mariadb
+```
