@@ -106,7 +106,7 @@ sudo amazon-linux-extras enable php8.1
 ### 8.12. Install PHP and required extensions ⚙️
 Install PHP along with necessary modules (for MySQL, Curl, GD, etc.):
 ```bash
-sudo yum install -y php php-cli php-mysqlnd php-curl php-gd php-mbstring php-xml php-zip
+sudo yum install -y php php-cli php-mysqlnd php-curl php-gd php-mbstring php-xml php-zip unzip
 ```
 ### 8.13. Restart Apache 🔄
 Restart Apache to load PHP:
