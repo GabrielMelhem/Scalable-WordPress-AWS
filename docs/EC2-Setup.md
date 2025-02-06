@@ -163,3 +163,78 @@ To access phpMyAdmin.
 
 
 ## Step 9: Set Up WORDPRESS on Amazon Linux 🔧
+Follow the steps below to set up WordPress on Amazon Linux.
+
+### 1. Update System and Install Required Packages
+```bash
+sudo yum update -y
+```
+
+### 2. Download and Extract WordPress
+```bash
+cd /var/www/html
+sudo wget https://wordpress.org/latest.tar.gz
+sudo tar -xzf latest.tar.gz
+sudo rm -f latest.tar.gz
+```
+
+### 3. Set Correct Permissions
+```bash
+sudo chown -R apache:apache /var/www/html/wordpress
+sudo chmod -R 755 /var/www/html/wordpress
+```
+
+### 4. Create Apache Virtual Host Configuration for WordPress
+```bash
+sudo tee /etc/httpd/conf.d/wordpress.conf << EOF
+<VirtualHost *:80>
+    DocumentRoot /var/www/html/wordpress
+    <Directory /var/www/html/wordpress>
+        Options FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+EOF
+```
+
+### 5. Enable `.htaccess` Overrides in Apache
+```bash
+sudo sed -i 's/AllowOverride None/AllowOverride All/' /etc/httpd/conf/httpd.conf
+```
+
+### 6. Restart Apache
+```bash
+sudo systemctl restart httpd
+```
+
+### 7. Copy WordPress Configuration File
+```bash
+cd /var/www/html/wordpress
+sudo cp wp-config-sample.php wp-config.php
+```
+
+### 8. Edit the Configuration File
+Edit `wp-config.php` with:
+```bash
+sudo nano wp-config.php
+```
+🔧 You'll need to update the database connection settings inside `wp-config.php`.
+```
+Update the database settings:
+define('DB_NAME', 'wordpress');
+define('DB_USER', 'wordpress');
+define('DB_PASSWORD', 'wordpress');
+define('DB_HOST', 'localhost');
+```
+
+### 9.Complete Installation via Browser
+Go to:
+```
+http://your-server-ip/wp-admin/install.php
+```
+
+---
+
+These steps should set up WordPress successfully on your Amazon EC2 instance! 🎉
+
